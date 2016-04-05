@@ -1,10 +1,9 @@
 package project.irfananda.sunshine.dialog;
 
-import android.app.DialogFragment;
 import android.content.DialogInterface;
 import android.os.Bundle;
 import android.os.Handler;
-import android.os.Message;
+import android.support.v4.app.DialogFragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -36,7 +35,6 @@ public class CityDialog extends DialogFragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View v = inflater.inflate(R.layout.dialog_city, container,false);
 
-        getDialog().setTitle("City Weather Forecast");
         getDialog().setCancelable(true);
 
         final EditText edt_city = (EditText) v.findViewById(R.id.edt_city);

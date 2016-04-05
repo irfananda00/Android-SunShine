@@ -1,28 +1,295 @@
 <resources>
 
-    <style name="MyMaterialTheme" parent="MyMaterialTheme.Base">
-
+    --------------------------------------------------------------------------------------
+    <style name="AppTheme" parent="AppThemeDark.Base" >
+        <!-- Base application theme.
+             Defining this lets values-v21/styles.xml reuse it with changes. -->
     </style>
-
-    <style name="MyMaterialTheme.Base" parent="Theme.AppCompat.Light">
-        <item name="windowNoTitle">true</item>
-        <item name="windowActionBar">false</item>
+    <style name="AppThemeDark.Base" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- colorPrimary is used, for instance, for the default ActionBar
+             (but not Toolbar) background.
+              We specify the same color for the toolbar background in
+              toolbar.xml.. -->
         <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
-        <item name="colorAccent">@color/colorAccent</item>
-        <item name="android:textColorPrimary">@color/colorPrimaryText</item>
-        <item name="android:textColorSecondary">@color/colorSecondaryText</item>
-        <item name="android:textColor">@color/colorText</item>
-        <item name="android:divider">@color/colorDivider</item>
-        <item name="android:background">@color/windowBackgroundDark</item>
-        <item name="android:actionOverflowButtonStyle">@style/MyActionButtonOverflow</item>
-        <item name="actionOverflowButtonStyle">@style/MyActionButtonOverflow</item>
-    </style>
-    <style name="MyMaterialTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
-    <style name="MyMaterialTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 
-    <style name="MyActionButtonOverflow" parent="android:style/Widget.Holo.ActionButton.Overflow">
-        <item name="android:src">@drawable/ic_more_vert_white_24dp</item>
+        <!-- colorPrimaryDark is used for the status bar (with the
+             battery, clock, etc). -->
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+
+        <!-- colorAccent is used as the default value for
+             colorControlActivated which is used to tint widgets. -->
+        <item name="colorAccent">@color/colorAccent</item>
     </style>
+
+    --------------------------------------------------------------------------------------
+    <style name="clearsky" parent="AppThemeDark.Base" >
+        <!-- Base application theme.
+             Defining this lets values-v21/styles.xml reuse it with changes. -->
+    </style>
+    <style name="clearsky.Base" parent="Theme.AppCompat.NoActionBar">
+        <!-- colorPrimary is used, for instance, for the default ActionBar
+             (but not Toolbar) background.
+              We specify the same color for the toolbar background in
+              toolbar.xml.. -->
+        <item name="colorPrimary">@color/colorWeatherclearskyPrimary</item>
+
+        <!-- colorPrimaryDark is used for the status bar (with the
+             battery, clock, etc). -->
+        <item name="colorPrimaryDark">@color/colorWeatherclearskyPrimaryDark</item>
+
+        <!-- colorAccent is used as the default value for
+             colorControlActivated which is used to tint widgets. -->
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    --------------------------------------------------------------------------------------
+    <style name="fewclouds" parent="AppThemeDark.Base" >
+        <!-- Base application theme.
+             Defining this lets values-v21/styles.xml reuse it with changes. -->
+    </style>
+    <style name="fewclouds.Base" parent="Theme.AppCompat.NoActionBar">
+        <!-- colorPrimary is used, for instance, for the default ActionBar
+             (but not Toolbar) background.
+              We specify the same color for the toolbar background in
+              toolbar.xml.. -->
+        <item name="colorPrimary">@color/colorWeatherfewcloudsPrimary</item>
+
+        <!-- colorPrimaryDark is used for the status bar (with the
+             battery, clock, etc). -->
+        <item name="colorPrimaryDark">@color/colorWeatherfewcloudsPrimaryDark</item>
+
+        <!-- colorAccent is used as the default value for
+             colorControlActivated which is used to tint widgets. -->
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    --------------------------------------------------------------------------------------
+    <style name="scatteredclouds" parent="AppThemeDark.Base" >
+        <!-- Base application theme.
+             Defining this lets values-v21/styles.xml reuse it with changes. -->
+    </style>
+    <style name="scatteredclouds.Base" parent="Theme.AppCompat.NoActionBar">
+        <!-- colorPrimary is used, for instance, for the default ActionBar
+             (but not Toolbar) background.
+              We specify the same color for the toolbar background in
+              toolbar.xml.. -->
+        <item name="colorPrimary">@color/colorWeatherscatteredcloudsPrimary</item>
+
+        <!-- colorPrimaryDark is used for the status bar (with the
+             battery, clock, etc). -->
+        <item name="colorPrimaryDark">@color/colorWeatherscatteredcloudsPrimaryDark</item>
+
+        <!-- colorAccent is used as the default value for
+             colorControlActivated which is used to tint widgets. -->
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    --------------------------------------------------------------------------------------
+    <style name="brokenclouds" parent="AppThemeDark.Base" >
+        <!-- Base application theme.
+             Defining this lets values-v21/styles.xml reuse it with changes. -->
+    </style>
+    <style name="brokenclouds.Base" parent="Theme.AppCompat.NoActionBar">
+        <!-- colorPrimary is used, for instance, for the default ActionBar
+             (but not Toolbar) background.
+              We specify the same color for the toolbar background in
+              toolbar.xml.. -->
+        <item name="colorPrimary">@color/colorWeatherbrokencloudsPrimary</item>
+
+        <!-- colorPrimaryDark is used for the status bar (with the
+             battery, clock, etc). -->
+        <item name="colorPrimaryDark">@color/colorWeatherbrokencloudsPrimaryDark</item>
+
+        <!-- colorAccent is used as the default value for
+             colorControlActivated which is used to tint widgets. -->
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    --------------------------------------------------------------------------------------
+    <style name="showerrain" parent="AppThemeDark.Base" >
+        <!-- Base application theme.
+             Defining this lets values-v21/styles.xml reuse it with changes. -->
+    </style>
+    <style name="showerrain.Base" parent="Theme.AppCompat.NoActionBar">
+        <!-- colorPrimary is used, for instance, for the default ActionBar
+             (but not Toolbar) background.
+              We specify the same color for the toolbar background in
+              toolbar.xml.. -->
+        <item name="colorPrimary">@color/colorWeathershowerrainPrimary</item>
+
+        <!-- colorPrimaryDark is used for the status bar (with the
+             battery, clock, etc). -->
+        <item name="colorPrimaryDark">@color/colorWeathershowerrainPrimaryDark</item>
+
+        <!-- colorAccent is used as the default value for
+             colorControlActivated which is used to tint widgets. -->
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    --------------------------------------------------------------------------------------
+    <style name="rain" parent="AppThemeDark.Base" >
+        <!-- Base application theme.
+             Defining this lets values-v21/styles.xml reuse it with changes. -->
+    </style>
+    <style name="rain.Base" parent="Theme.AppCompat.NoActionBar">
+        <!-- colorPrimary is used, for instance, for the default ActionBar
+             (but not Toolbar) background.
+              We specify the same color for the toolbar background in
+              toolbar.xml.. -->
+        <item name="colorPrimary">@color/colorWeatherrainPrimary</item>
+
+        <!-- colorPrimaryDark is used for the status bar (with the
+             battery, clock, etc). -->
+        <item name="colorPrimaryDark">@color/colorWeatherrainPrimaryDark</item>
+
+        <!-- colorAccent is used as the default value for
+             colorControlActivated which is used to tint widgets. -->
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    --------------------------------------------------------------------------------------
+    <style name="thunderstorm" parent="AppThemeDark.Base" >
+        <!-- Base application theme.
+             Defining this lets values-v21/styles.xml reuse it with changes. -->
+    </style>
+    <style name="thunderstorm.Base" parent="Theme.AppCompat.NoActionBar">
+        <!-- colorPrimary is used, for instance, for the default ActionBar
+             (but not Toolbar) background.
+              We specify the same color for the toolbar background in
+              toolbar.xml.. -->
+        <item name="colorPrimary">@color/colorWeatherthunderstormPrimary</item>
+
+        <!-- colorPrimaryDark is used for the status bar (with the
+             battery, clock, etc). -->
+        <item name="colorPrimaryDark">@color/colorWeatherthunderstormPrimaryDark</item>
+
+        <!-- colorAccent is used as the default value for
+             colorControlActivated which is used to tint widgets. -->
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    --------------------------------------------------------------------------------------
+    <style name="snow" parent="AppThemeDark.Base" >
+        <!-- Base application theme.
+             Defining this lets values-v21/styles.xml reuse it with changes. -->
+    </style>
+    <style name="snow.Base" parent="Theme.AppCompat.NoActionBar">
+        <!-- colorPrimary is used, for instance, for the default ActionBar
+             (but not Toolbar) background.
+              We specify the same color for the toolbar background in
+              toolbar.xml.. -->
+        <item name="colorPrimary">@color/colorWeathersnowPrimary</item>
+
+        <!-- colorPrimaryDark is used for the status bar (with the
+             battery, clock, etc). -->
+        <item name="colorPrimaryDark">@color/colorWeathersnowPrimaryDark</item>
+
+        <!-- colorAccent is used as the default value for
+             colorControlActivated which is used to tint widgets. -->
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    --------------------------------------------------------------------------------------
+    <style name="mist" parent="AppThemeDark.Base" >
+        <!-- Base application theme.
+             Defining this lets values-v21/styles.xml reuse it with changes. -->
+    </style>
+    <style name="mist.Base" parent="Theme.AppCompat.NoActionBar">
+        <!-- colorPrimary is used, for instance, for the default ActionBar
+             (but not Toolbar) background.
+              We specify the same color for the toolbar background in
+              toolbar.xml.. -->
+        <item name="colorPrimary">@color/colorWeathermistPrimary</item>
+
+        <!-- colorPrimaryDark is used for the status bar (with the
+             battery, clock, etc). -->
+        <item name="colorPrimaryDark">@color/colorWeathermistPrimaryDark</item>
+
+        <!-- colorAccent is used as the default value for
+             colorControlActivated which is used to tint widgets. -->
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    --------------------------------------------------------------------------------
+    <style name="ThemeToolbarOverflowDark" parent="Theme.AppCompat.NoActionBar">
+        <!-- android:textColorPrimary is the  color of the title text
+             in the Toolbar, in the Theme.AppCompat theme:  -->
+        <item name="android:textColorPrimary">@color/colorTextDark</item>
+
+        <!-- android:textColorPrimaryInverse is the  color of the title
+             text in the Toolbar, in the Theme.AppCompat.Light theme:  -->
+        <!-- <item name="android:textColorPrimaryInverse">@color/abc_primary_text_material_light</item> -->
+
+        <!-- android:actionMenuTextColor is the color of the text of
+              action (menu) items in the Toolbar, at least in the
+              Theme.AppCompat theme.
+              For some reason, they already get the textColorPrimary
+              when running on API 21, but not on older versions of
+              Android, so this is only necessary to support older
+              Android versions.-->
+        <item name="actionMenuTextColor">@color/colorTextDark</item>
+        <!-- android:textColorSecondary is the color of the menu
+             overflow icon (three vertical dots) -->
+        <item name="android:textColorSecondary">@color/colorTextDark</item>
+
+        <!-- This would set the toolbar's background color,
+              but setting this also changes the popup menu's background,
+              even if we define popupTheme for our <Toolbar> -->
+        <!-- <item name="android:background">@color/color_primary</item> -->
+    </style>
+
+    --------------------------------------------------------------------------------
+    <style name="ThemeToolbarOverflowLight" parent="Theme.AppCompat.NoActionBar">
+        <!-- android:textColorPrimary is the  color of the title text
+             in the Toolbar, in the Theme.AppCompat theme:  -->
+        <item name="android:textColorPrimary">@color/colorTextLight</item>
+
+        <!-- android:textColorPrimaryInverse is the  color of the title
+             text in the Toolbar, in the Theme.AppCompat.Light theme:  -->
+        <!-- <item name="android:textColorPrimaryInverse">@color/abc_primary_text_material_light</item> -->
+
+        <!-- android:actionMenuTextColor is the color of the text of
+              action (menu) items in the Toolbar, at least in the
+              Theme.AppCompat theme.
+              For some reason, they already get the textColorPrimary
+              when running on API 21, but not on older versions of
+              Android, so this is only necessary to support older
+              Android versions.-->
+        <item name="actionMenuTextColor">@color/colorTextLight</item>
+        <!-- android:textColorSecondary is the color of the menu
+             overflow icon (three vertical dots) -->
+        <item name="android:textColorSecondary">@color/colorTextLight</item>
+
+        <!-- This would set the toolbar's background color,
+              but setting this also changes the popup menu's background,
+              even if we define popupTheme for our <Toolbar> -->
+        <!-- <item name="android:background">@color/color_primary</item> -->
+    </style>
+
+
+    ---------------------------------------------------------------------------------
+    <!--<style name="MyMaterialTheme" parent="MyMaterialTheme.Base">-->
+
+    <!--</style>-->
+
+    <!--<style name="MyMaterialTheme.Base" parent="Theme.AppCompat">-->
+        <!--<item name="windowNoTitle">true</item>-->
+        <!--<item name="windowActionBar">false</item>-->
+        <!--<item name="colorPrimary">@color/colorPrimary</item>-->
+        <!--<item name="colorPrimaryDark">@color/colorPrimaryDark</item>-->
+        <!--<item name="colorAccent">@color/colorAccent</item>-->
+        <!--<item name="android:textColorPrimary">@color/colorPrimaryText</item>-->
+        <!--<item name="android:textColorSecondary">@color/colorSecondaryText</item>-->
+        <!--<item name="android:divider">@color/colorDivider</item>-->
+        <!--<item name="android:background">@color/windowBackgroundDark</item>-->
+        <!--<item name="android:actionOverflowButtonStyle">@style/MyActionButtonOverflow</item>-->
+        <!--<item name="actionOverflowButtonStyle">@style/MyActionButtonOverflow</item>-->
+    <!--</style>-->
+    <!--<style name="MyMaterialTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Light" />-->
+    <!--<style name="MyMaterialTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />-->
+
+    <!--<style name="MyActionButtonOverflow" parent="android:style/Widget.Holo.ActionButton.Overflow">-->
+        <!--&lt;!&ndash;<item name="android:src">@drawable/ic_more_vert_white_24dp</item>&ndash;&gt;-->
+    <!--</style>-->
 
 </resources>
